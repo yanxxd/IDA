@@ -7,32 +7,32 @@
 ```python
 def define_func(beg, end):
 
-cur = beg
+    cur = beg
 
-if beg%4 != 0:
-    cur = beg + 4 - beg%4 # 对齐
+    if beg%4 != 0:
+        cur = beg + 4 - beg%4 # 对齐
 
-end = end - end%4
+    end = end - end%4
 
-while cur < end:
+    while cur < end:
 
-    if ida_kernwin.user_cancelled():
-        print('Cancelled')
-        break
+        if ida_kernwin.user_cancelled():
+            print('Cancelled')
+            break
 
-    cur_func = ida_funcs.get_func(cur)
-    print("cur 0x%08x" % cur)
+        cur_func = ida_funcs.get_func(cur)
+        print("cur 0x%08x" % cur)
 
-    if cur_func is None:
+        if cur_func is None:
 
-        if ida_funcs.add_func(cur):
-            cur = ida_funcs.get_func(cur).endEA
+            if ida_funcs.add_func(cur):
+                cur = ida_funcs.get_func(cur).endEA
+
+            else:
+                cur = cur + 4
 
         else:
-            cur = cur + 4
-
-    else:
-        cur = cur_func.endEA
+            cur = cur_func.endEA
 ```
 使用时步骤如下：
 
