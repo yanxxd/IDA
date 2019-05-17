@@ -4,7 +4,7 @@ This repository is used to store IDA related data, include idc scripts, python s
 [GenAsmAndBytes](GenAsmAndBytes):  Generate .asm file and .bytes file from PE.  
 
 # IDAPython
-[GenCallPath](GenCallPath) Generate the function call path.
+[GenCallPath](GenCallPath) Generate the function call path. Include static path and dynamic path.
 
 # Plugins on github
 [keypatch](https://github.com/keystone-engine/keypatch) Modify the program.  
