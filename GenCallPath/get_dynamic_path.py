@@ -1,4 +1,4 @@
-#https://blog.csdn.net/chence19871/article/details/50727935
+# https://blog.csdn.net/chence19871/article/details/50727935
 
 from idaapi import *
  
