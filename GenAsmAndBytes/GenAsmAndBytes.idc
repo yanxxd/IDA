@@ -82,5 +82,6 @@ static main()
   Message("------ generate bytes end ------\n");
   
   Message("------ All done, exiting... ------\n");
+  SaveBase(0, 0)
   Exit(0);                              // exit to OS, error code 0 - success
 }
