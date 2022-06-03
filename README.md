@@ -19,6 +19,7 @@ name     | comment
 [Ponce](https://github.com/illera88/Ponce) | Plugins of symbol execution, No.1 in 2016 IDA plug-in competition.  
 [ida_ipython](https://github.com/james91b/ida_ipython) | Embedded ipython.  
 [IDAmetrics](https://github.com/mxmssh/IDAmetrics) | Improving fuzzing using software complexity metrics.
+[VulFi](https://github.com/Accenture/VulFi) | Vulnerability Finder.
 
 # 4. IDA in Ubuntu
 ```shell
